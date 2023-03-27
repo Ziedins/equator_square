@@ -46,7 +46,6 @@ fn main() {
     let smaller_circle_radius: f32 = equator_radius * (90. - arc_angle).to_radians().sin();
     let smaller_circle_circumfrence: f32 = 2. * PI * smaller_circle_radius;
     let smaller_circle_arc_angle: f32 = (side_length * 360.) / smaller_circle_circumfrence;
-    println!("angle: {}", smaller_circle_arc_angle);
     let equator_arc_length: f32 = smaller_circle_arc_angle * (PI / 180.) * equator_radius;
 
     let distance_from_original_location: f32 = equator_arc_length - side_length;
